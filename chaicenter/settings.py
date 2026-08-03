@@ -121,3 +121,7 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+LOGIN_URL = '/accounts/login/'  # Redirect to login page if user is not authenticated
+LOGIN_REDIRECT_URL = '/tweet'  # Redirect to home page after successful login
+LOGOUT_REDIRECT_URL = '/accounts/login/'  # Redirect to login page after logout
